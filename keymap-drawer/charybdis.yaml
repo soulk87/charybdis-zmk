@@ -1,5 +1,6 @@
 layers:
-  Base:
+  BASE:
+  - {t: BASE, h: toggle}
   - Q
   - W
   - E
@@ -10,212 +11,304 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - L_BASE L_PHOTO L_GAME
+  - {t: TAB, h: LCMD}
+  - {t: A, h: NAV}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: Z, h: Pointer}
-  - X
-  - C
+  - {t: J, h: LEFT SHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: LCMD}
+  - DEL
+  - SEARCH
+  - Z
+  - {t: X, h: MEH}
+  - {t: C, h: HYPER}
   - V
   - B
   - N
   - M
-  - ','
+  - {t: ',', h: HYPER}
+  - {t: ., h: MEH}
+  - /
+  - DEV TOOLS
+  - SCRL SLOW
+  - L CLK
+  - {t: BACK SPACE, h: NUM}
+  - {t: RETURN, h: MOUSE}
+  - {t: SPACE, h: SYM}
+  NUM:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
+  - {t: '7', h: F7}
+  - {t: '8', h: F8}
+  - {t: '9', h: F9}
+  - {t: '-', h: F10}
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - BACK SPACE
+  - ''
+  - '*'
+  - {t: '4', h: F4}
+  - {t: '5', h: F5}
+  - {t: '6', h: F6}
+  - {t: +, h: F11}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - .
-  - {t: /, h: Pointer}
-  - {t: '$$mdi:keyboard-esc$$', h: Media}
-  - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: Numeral/Function, h: sticky}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Symbol, h: sticky}
-  Numeral/Function:
+  - {t: '1', h: F1}
+  - {t: '2', h: F2}
+  - {t: '3', h: F3}
+  - {t: '=', h: DEV TOOLS}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - '0'
   - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F12
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - $$mdi:backspace-reverse-outline$$
-  - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
-  - F11
-  - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F10
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  NAV:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PANE ◀
+  - PANE ▲
+  - PANE ▼
+  - PANE ▶
+  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - '0'
-  Symbol:
-  - '~'
-  - '&'
-  - '*'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - VSPLIT
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HSPLIT
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM:
+  - ''
   - +
-  - {t: ▽, type: trans}
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - '|'
   - '-'
-  - $
-  - '%'
-  - ^
-  - '='
-  - {t: ▽, type: trans}
-  - (
-  - )
-  - '"'
-  - ''''
-  - _
-  - '!'
-  - '@'
-  - '#'
+  - ':'
+  - \
   - '`'
-  - {t: ▽, type: trans}
+  - $
+  - ^
+  - ''''
+  - ''
+  - ''
+  - {t: '!', h: LCMD}
+  - {t: (, h: LEFT ALT}
+  - {t: ), h: LCTRL}
+  - {t: SPACE, h: LEFT SHIFT}
+  - '~'
+  - /
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: <, h: LCTRL}
+  - {t: '>', h: LEFT ALT}
+  - '#'
+  - ''
+  - ''
+  - '='
   - '['
   - ']'
+  - _
+  - ;
+  - '|'
+  - '*'
+  - '&'
+  - '%'
+  - '@'
+  - ''
   - {t: ▽, type: trans}
-  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  Navigation:
+  GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
+    LEFT ALT, '', '']
+  PHOTOS:
+  - {t: ▽, type: trans}
+  - TAG Z
+  - TAG E
+  - TAG A
+  - TAG S
+  - TAG B
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - FIT
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - SHRED
+  - SHOW TAGS
+  - REJECT
+  - PENDING
+  - ACCEPT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-tab$$
-  - {t: ▽, type: trans}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
-  - INS
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Media:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:skip-previous$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - $$mdi:skip-next$$
-  - $$mdi:skip-previous$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - $$mdi:skip-next$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  EXTRAS:
+  - POWER
+  - SHRUG
+  - LGTM
+  - GIT COMMIT
+  - ''
+  - BRIGHTNESS INC
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - OUT TOG
+  - BT CLR
+  - SLEEP
+  - SHIT SUDO
+  - PYTHON LOOP
+  - JS LOOP
+  - ''
+  - BRIGHTNESS DEC
+  - ''
+  - PREVIOUS
   - PLAY PAUSE
   - STOP
-  - STOP
-  - PLAY PAUSE
-  Pointer:
+  - NEXT
+  - ''
+  - LOCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - CLIP HIST
+  - NEW DIR
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - PRINT SCREEN
+  - ZMK Studio
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  MOUSE:
+  - ''
+  - WHEEL L
+  - WHEEL D
+  - MOVE UP
+  - WHEEL U
+  - WHEEL R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - BACK
+  - MOVE L
+  - MOVE D
+  - MOVE R
+  - FWD
+  - ''
+  - RIGHT SHIFT
+  - RCTRL
+  - LEFT ALT
+  - LCMD
+  - ''
+  - ''
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - M CLK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: RETURN, type: held}
   - {t: ▽, type: trans}
+  SLOW:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - Scroll
-  - Sniper
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Sniper, h: toggle}
-  - {t: Scroll, h: toggle}
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,8 +329,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,12 +337,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Sniper:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -272,9 +363,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -288,21 +380,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [11, 12]
-  k: '&mkp LCLK'
-  l: [Base]
-- p: [21, 22]
-  k: '&mkp RCLK'
-  l: [Base]
-- p: [22, 23]
-  k: '&mkp MCLK'
-  l: [Base]
 - p: [17, 18]
-  k: '&mkp LCLK'
-  l: [Base]
-- p: [27, 28]
-  k: '&mkp RCLK'
-  l: [Base]
-- p: [26, 27]
-  k: '&mkp MCLK'
-  l: [Base]
+  k: CAPS WORD
+  l: [BASE]
+- p: [28, 37]
+  k: M CLK
+- p: [16, 37]
+  k: R CLK
+- p: [38, 39]
+  k: L_BASE L_EXTRA
